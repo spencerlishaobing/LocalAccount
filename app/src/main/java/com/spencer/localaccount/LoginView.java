@@ -100,7 +100,6 @@ public class LoginView extends Activity {
     }
 
     private void gotoMain() {
-
         Intent intent = new Intent(LoginView.this, MainView.class);
         startActivityForResult(intent, IntentCode.INTENT_REGIST);
     }
