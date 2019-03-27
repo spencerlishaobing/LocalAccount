@@ -74,15 +74,15 @@ public class AccountDBManager {
         db.beginTransaction();
         try {
             db.execSQL(
-
                     "UPDATE accountTable SET " +
-                            " userName = '" + accountBean.getUserName() + "'" + "," +
                             " account = '" + accountBean.getAccount() + "'" + "," +
                             " password = '" + accountBean.getPassword() + "'" + "," +
                             " remark = '" + accountBean.getRemark() + "'" + "," +
                             " email = '" + accountBean.getEmail() + "'" + "," +
-                            " phone = '" + accountBean.getPhone() + "'" + "," +
-                            " WHERE description = '" + accountBean.getDescription() + "'");
+                            " phone = '" + accountBean.getPhone() + "'" + " " +
+                            " WHERE description = '" + accountBean.getDescription() + "'" +
+                            " AND " +
+                            "userName = '" + accountBean.getUserName() + "'");
             db.setTransactionSuccessful();  //设置事务成功完成
         } finally {
             db.endTransaction();    //结束事务

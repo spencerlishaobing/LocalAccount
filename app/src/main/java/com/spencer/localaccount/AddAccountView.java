@@ -73,9 +73,9 @@ public class AddAccountView extends Activity {
             et_email.setText(accountBean.getEmail());
             et_phone.setText(accountBean.getPhone());
             et_remark.setText(accountBean.getRemark());
-            btn_add.setText("新增账户");
-        }
 
+        }
+        btn_add.setText("提 交");
         btn_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -133,7 +133,7 @@ public class AddAccountView extends Activity {
             return;
         }
 
-        if (!CommonUtils.checkEmaile(email)) {
+        if (!TextUtils.isEmpty(email)&&!CommonUtils.checkEmaile(email)) {
             CommonUtils.showToast(this, "邮箱格式不正确");
             return;
         }
