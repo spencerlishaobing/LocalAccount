@@ -111,13 +111,17 @@ public class LoginView extends Activity {
 
     @Override
     protected void onStop() {
+
         et_password.setText("");
+
         super.onStop();
     }
 
     @Override
     protected void onPause() {
+
         et_password.setText("");
+
         super.onPause();
     }
 
