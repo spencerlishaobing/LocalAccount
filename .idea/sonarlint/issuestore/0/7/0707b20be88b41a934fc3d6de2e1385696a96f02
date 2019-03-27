@@ -1,0 +1,22 @@
+
+Nsquid:S00108’")Either remove or fill this block of code.(¬ ¤Úşÿÿÿÿ8‚–¨Ò›-
+qsquid:S1871œ"MThis branch's code block is the same as the block for the branch on line 274.(ê±›Ñüÿÿÿÿ8‚–¨Ò›-
+}squid:S2293©"YReplace the type specification in this constructor call with the diamond operator ("<>").(¨“îœşÿÿÿÿ8â¡¾Ñ›-
+qsquid:S1871š"MThis branch's code block is the same as the block for the branch on line 274.(Õó³÷úÿÿÿÿ8‚–¨Ò›-
+Nsquid:S00108œ")Either remove or fill this block of code.(ê±›Ñüÿÿÿÿ8‚–¨Ò›-
+lsquid:S1871”"MThis branch's code block is the same as the block for the branch on line 274.(æÎà 8‚–¨Ò›-
+asquid:UselessImportCheck&"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8ÇÂ¿Î›-
+lsquid:S1871–"MThis branch's code block is the same as the block for the branch on line 274.(ó´®8‚–¨Ò›-
+Isquid:S00108˜")Either remove or fill this block of code.(õœšÿ8‚–¨Ò›-
+hsquid:CommentedOutCodeLineG"<This block of commented-out lines of code should be removed.(ê”ïk8ö´äĞ›-
+esquid:UselessImportCheck("5Remove this unused import 'java.lang.reflect.Method'.(Í“¯äüÿÿÿÿ8é­şÏ›-
+bsquid:UselessImportCheck%"2Remove this unused import 'android.widget.Button'.(²òıÿÿÿÿ8›£ÓĞ›-
+^squid:UselessImportCheck+".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8ááüÏ›-
+asquid:S1155_">Use isEmpty() to check whether the collection is empty or not.(Ùı’ıÿÿÿÿ8ŒìÓĞ›-
+rsquid:MaximumInheritanceDepth/"=This class has 10 parents which is greater than 5 authorized.( ÇÀ„ıÿÿÿÿ8ß¡›À›-
+Nsquid:S00108š")Either remove or fill this block of code.(Õó³÷úÿÿÿÿ8‚–¨Ò›-
+Isquid:S00108”")Either remove or fill this block of code.(æÎà 8‚–¨Ò›-
+lsquid:S1871˜"MThis branch's code block is the same as the block for the branch on line 274.(õœšÿ8‚–¨Ò›-
+Isquid:S00108–")Either remove or fill this block of code.(ó´®8‚–¨Ò›-
+Lsquid:S1185Ä"(Remove this method to simply inherit it.(ÛÃÿøÿÿÿÿ8â¡¾Ñ›-
+Gsquid:S1148¦"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8â¡¾Ñ›-

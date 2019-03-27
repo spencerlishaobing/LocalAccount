@@ -1,0 +1,15 @@
+
+nsquid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(âÐÅúÿÿÿÿ8º†óÐ›-
+Nsquid:S1905&"+Remove this unnecessary cast to "EditText".(žëþ¨úÿÿÿÿ8‹’ÿÉ›-
+{squid:S1450"XRemove the "btn_login" field and declare it as a local variable in the relevant methods.(ºšŒéûÿÿÿÿ8µŠ€Ê›-
+Nsquid:S1905)"+Remove this unnecessary cast to "TextView".(Óõâ¦ûÿÿÿÿ8†Ì€Ê›-
+[squid:UnusedPrivateMethodS"*Remove this unused private "login" method.(Š¼êÄÿÿÿÿÿ8ÆÕñÐ›-
+|squid:S1450"YRemove the "btn_regist" field and declare it as a local variable in the relevant methods.(è†ÃÇÿÿÿÿÿ8ôÓ´Î›-
+Nsquid:S19058"+Remove this unnecessary cast to "CheckBox".(ÕÚÂÓùÿÿÿÿ8“‹âÍ›-
+Nsquid:S1905'"+Remove this unnecessary cast to "EditText".(ô³Ížýÿÿÿÿ8¨ºÿÉ›-
+zsquid:S00116"VRename this field "et_password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ðù‡ÿÿÿÿÿ8êÉúÉ›-
+isquid:CommentedOutCodeLine-"<This block of commented-out lines of code should be removed.(£ˆ¾è8ÆÕñÐ›-
+ysquid:S00116"URename this field "btn_regist" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è†ÃÇÿÿÿÿÿ8´ýÉ›-
+Gsquid:S1905(")Remove this unnecessary cast to "Button".(Œ‚¥Ô8›±€Ê›-
+usquid:S00116"VRename this field "et_username" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›ŠÞ”8êÉúÉ›-
+xsquid:S00116"TRename this field "btn_login" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºšŒéûÿÿÿÿ8´ýÉ›-
