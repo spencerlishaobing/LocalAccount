@@ -110,6 +110,18 @@ public class LoginView extends Activity {
     }
 
     @Override
+    protected void onStop() {
+        et_password.setText("");
+        super.onStop();
+    }
+
+    @Override
+    protected void onPause() {
+        et_password.setText("");
+        super.onPause();
+    }
+
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == IntentCode.INTENT_REGIST && resultCode == RESULT_OK) {
             et_username.setText(GV.getUserName(LoginView.this));
