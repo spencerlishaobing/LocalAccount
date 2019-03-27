@@ -69,7 +69,7 @@ public class MainView extends AppCompatActivity
             public void onClick(View view) {
 //                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
 //                        .setAction("Action", null).show();
-                select(isSelectedAll);
+                select(!isSelectedAll);
             }
         });
 
@@ -92,6 +92,7 @@ public class MainView extends AppCompatActivity
 
 
     private void select(boolean isSelectAll) {
+        isSelectedAll = isSelectAll;
         if (data.size() == 0) {
             return;
         }
@@ -101,7 +102,6 @@ public class MainView extends AppCompatActivity
         }
         table.refreshDrawableState();
         table.invalidate();
-        isSelectedAll = !isSelectAll;
     }
 
 
