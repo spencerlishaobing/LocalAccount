@@ -103,6 +103,12 @@ public class AddAccountView extends Activity {
                 }
             }
         });
+        findViewById(R.id.ib_back).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
     }
 

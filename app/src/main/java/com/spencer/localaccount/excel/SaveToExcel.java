@@ -52,7 +52,6 @@ public class SaveToExcel {
 			// copyDateAndFormat(new File("c:/a.xls"), 0, "c:/a2.xls");
 		}
 		catch (Exception e) {
-			// TODO 自动生成 catch 块
 			Log.i(SaveToExcel.class.getClass().toString(), e.getMessage());
 		}
 	}

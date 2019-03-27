@@ -5,9 +5,9 @@
         <shape>
             <padding android:bottom="4dp" android:left="10dp" android:right="10dp" android:top="4dp" />
 
-            <stroke android:color="@color/ywzlgk_color8" />
+            <stroke android:width="2dp" android:color="@color/ywzlgk_color8" />
 
-            <solid android:color="@color/bg_bar_emg" />
+            <solid android:color="@color/white" />
 
 
             <corners android:bottomLeftRadius="10dp" android:bottomRightRadius="10dp" android:topLeftRadius="10dp" android:topRightRadius="10dp" />
@@ -17,8 +17,8 @@
         <shape>
             <padding android:bottom="4dp" android:left="10dp" android:right="10dp" android:top="4dp" />
 
-            <stroke android:color="@color/app_color" />
-            <solid android:color="@color/bg_bar_emg" />
+            <stroke android:width="2dp" android:color="@color/app_color" />
+            <solid android:color="@color/white" />
 
             <corners android:bottomLeftRadius="10dp" android:bottomRightRadius="10dp" android:topLeftRadius="10dp" android:topRightRadius="10dp" />
         </shape>
