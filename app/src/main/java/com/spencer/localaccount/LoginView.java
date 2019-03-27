@@ -93,6 +93,7 @@ public class LoginView extends Activity {
         LogjnBean logjnBean = logjnDBManager.query(username);
         if (password.equals(logjnBean.getPassword())) {
             GV.setUserName(LoginView.this, username);
+            gotoMain();
         } else {
             CommonUtils.showToast(LoginView.this, "密码错误");
         }

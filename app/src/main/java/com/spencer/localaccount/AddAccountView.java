@@ -128,7 +128,7 @@ public class AddAccountView extends Activity {
             return;
         }
 
-        if (TextUtils.isEmpty(account) || TextUtils.isEmpty(email)) {
+        if (TextUtils.isEmpty(account) && TextUtils.isEmpty(email)) {
             CommonUtils.showToast(this, "账户和邮箱至少填一个");
             return;
         }
