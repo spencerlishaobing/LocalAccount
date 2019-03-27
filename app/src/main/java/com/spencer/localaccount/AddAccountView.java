@@ -2,16 +2,18 @@ package com.spencer.localaccount;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.spencer.localaccount.db.accountdb.AccountBean;
 import com.spencer.localaccount.db.accountdb.AccountDBManager;
-import com.spencer.localaccount.db.logindb.LogjnDBManager;
 import com.spencer.localaccount.utils.CommonUtils;
 import com.spencer.localaccount.utils.GV;
 
@@ -53,14 +55,14 @@ public class AddAccountView extends Activity {
     }
 
     private void initView() {
-        tv_title = (TextView) findViewById(R.id.tv_title);
-        et_des = (EditText) findViewById(R.id.et_des);
-        et_account = (EditText) findViewById(R.id.et_account);
-        et_password = (EditText) findViewById(R.id.et_password);
-        et_email = (EditText) findViewById(R.id.et_email);
-        et_phone = (EditText) findViewById(R.id.et_phone);
-        et_remark = (EditText) findViewById(R.id.et_remark);
-        btn_add = (Button) findViewById(R.id.btn_add);
+        tv_title = findViewById(R.id.tv_title);
+        et_des = findViewById(R.id.et_des);
+        et_account = findViewById(R.id.et_account);
+        et_password = findViewById(R.id.et_password);
+        et_email = findViewById(R.id.et_email);
+        et_phone = findViewById(R.id.et_phone);
+        et_remark = findViewById(R.id.et_remark);
+        btn_add = findViewById(R.id.btn_add);
 
         if (isUpdate) {
             tv_title.setText("修改账户");
@@ -78,6 +80,27 @@ public class AddAccountView extends Activity {
             public void onClick(View v) {
                 dealData();
 
+            }
+        });
+
+        final CheckBox cbPsw = findViewById(R.id.cb_psw);
+        cbPsw.setChecked(false);
+
+
+        if (cbPsw.isChecked()) {
+            et_password.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+        } else {
+            et_password.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+        }
+
+        cbPsw.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton view, boolean isChecked) {
+                if (cbPsw.isChecked()) {
+                    et_password.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                } else {
+                    et_password.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                }
             }
         });
 
