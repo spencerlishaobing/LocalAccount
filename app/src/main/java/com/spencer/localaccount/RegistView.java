@@ -1,7 +1,6 @@
 package com.spencer.localaccount;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
@@ -32,15 +31,16 @@ public class RegistView extends Activity {
         setContentView(R.layout.activity_regist_view);
         init();
         initView();
+        ((TextView) findViewById(R.id.tv_title)).setText("注册账户");
     }
 
     private void initView() {
-        et_username = (EditText) findViewById(R.id.et_username);
-        et_password = (EditText) findViewById(R.id.et_password);
-        et_email = (EditText) findViewById(R.id.et_email);
-        ibBack = (ImageButton) findViewById(R.id.ib_back);
+        et_username = findViewById(R.id.et_username);
+        et_password = findViewById(R.id.et_password);
+        et_email = findViewById(R.id.et_email);
+        ibBack = findViewById(R.id.ib_back);
 
-        btn_regist = (Button) findViewById(R.id.btn_regist);
+        btn_regist = findViewById(R.id.btn_regist);
         btn_regist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,7 +48,7 @@ public class RegistView extends Activity {
             }
         });
 
-        final CheckBox cbPsw = (CheckBox) findViewById(R.id.cb_psw);
+        final CheckBox cbPsw = findViewById(R.id.cb_psw);
         cbPsw.setChecked(false);
 
 
