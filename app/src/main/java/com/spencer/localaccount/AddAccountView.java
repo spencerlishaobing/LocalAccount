@@ -62,6 +62,7 @@ public class AddAccountView extends Activity {
         et_email = findViewById(R.id.et_email);
         et_phone = findViewById(R.id.et_phone);
         et_remark = findViewById(R.id.et_remark);
+
         btn_add = findViewById(R.id.btn_add);
 
         if (isUpdate) {
