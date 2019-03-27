@@ -1,11 +1,5 @@
 package com.spencer.localaccount;
 
-import com.spencer.localaccount.db.logindb.LogjnBean;
-import com.spencer.localaccount.db.logindb.LogjnDBManager;
-import com.spencer.localaccount.utils.CommonUtils;
-import com.spencer.localaccount.utils.GV;
-import com.spencer.localaccount.utils.IntentCode;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +10,12 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.spencer.localaccount.db.logindb.LogjnBean;
+import com.spencer.localaccount.db.logindb.LogjnDBManager;
+import com.spencer.localaccount.utils.CommonUtils;
+import com.spencer.localaccount.utils.GV;
+import com.spencer.localaccount.utils.IntentCode;
 
 
 public class LoginView extends Activity {
@@ -31,19 +31,17 @@ public class LoginView extends Activity {
         setContentView(R.layout.activity_login_view);
         init();
         initView();
-//        gotoMain();
     }
 
     private void initView() {
-        et_username = (EditText) findViewById(R.id.et_username);
-        et_password = (EditText) findViewById(R.id.et_password);
-        btn_login = (Button) findViewById(R.id.btn_login);
-        btn_regist = (TextView) findViewById(R.id.btn_regist);
+        et_username = findViewById(R.id.et_username);
+        et_password = findViewById(R.id.et_password);
+        btn_login = findViewById(R.id.btn_login);
+        btn_regist = findViewById(R.id.btn_regist);
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                login();
-                gotoMain();
+                login();
             }
         });
         btn_regist.setOnClickListener(new View.OnClickListener() {
@@ -53,7 +51,7 @@ public class LoginView extends Activity {
             }
         });
 
-        final CheckBox cbPsw = (CheckBox) findViewById(R.id.cb_psw);
+        final CheckBox cbPsw = findViewById(R.id.cb_psw);
         cbPsw.setChecked(false);
 
 
