@@ -1,15 +1,0 @@
-
-Nsquid:S1905'"+Remove this unnecessary cast to "EditText".(ô³Íıÿÿÿÿ8Ø³ıÍ›-
-dsquid:UselessImportCheck"4Remove this unused import 'android.widget.TextView'.(„Ë‚ˆÿÿÿÿÿ8…ÕşÍ›-
-Nsquid:S19053"+Remove this unnecessary cast to "CheckBox".(ÕÚÂÓùÿÿÿÿ8Ø³ıÍ›-
-wsquid:S00116"SRename this field "et_email" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó‡¸úÿÿÿÿ8ğ²€Î›-
-Qsquid:S1905)".Remove this unnecessary cast to "ImageButton".(¦ığëıÿÿÿÿ8î¡ÜÎ›-
-wsquid:S1450"YRemove the "btn_regist" field and declare it as a local variable in the relevant methods.(ËâƒÇ8Å¿ÛÎ›-
-zsquid:S00116"VRename this field "et_password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ğù‡ÿÿÿÿÿ8§ÊöÍ›-
-usquid:S00116"VRename this field "et_username" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›ŠŞ”8§ÊöÍ›-
-tsquid:S00116"URename this field "btn_regist" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËâƒÇ8§ÊöÍ›-
-]squid:UselessImportCheck"3Remove this unused import 'android.content.Intent'.(³ğ‹G8îõËÎ›-
-ssquid:S1450"URemove the "ibBack" field and declare it as a local variable in the relevant methods.(ğÆç‘8²ÆÚÎ›-
-Isquid:S1905("+Remove this unnecessary cast to "EditText".(Á”¹´8’ı€Î›-
-Gsquid:S1905+")Remove this unnecessary cast to "Button".(‚€Û€8…ÕşÍ›-
-Nsquid:S1905&"+Remove this unnecessary cast to "EditText".(ëş¨úÿÿÿÿ8àÏÎÎ›-

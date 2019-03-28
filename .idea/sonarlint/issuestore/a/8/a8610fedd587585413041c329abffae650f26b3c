@@ -1,21 +1,0 @@
-
-Isquid:S1905<"+Remove this unnecessary cast to "EditText".(Á”¹´8ôî¦Ò›-
-xsquid:S00116"TRename this field "et_remark" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êØŒòşÿÿÿÿ8„ÍÑ›-
-Nsquid:S1905="+Remove this unnecessary cast to "EditText".(„øß®ûÿÿÿÿ8ôî¦Ò›-
-qsquid:S00116"RRename this field "btn_add" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆåÚ”8íßÏÑ›-
-usquid:S00116"QRename this field "et_des" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éöûÿÿÿÿ8óüÊÑ›-
-usquid:S1450"WRemove the "tv_title" field and declare it as a local variable in the relevant methods.(†¾·8†åßÑ›-
-ysquid:S00116"URename this field "et_account" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†€Òìÿÿÿÿÿ8ĞèÑ›-
-Nsquid:S19058"+Remove this unnecessary cast to "TextView".(‘öøúÿÿÿÿ8ôî¦Ò›-
-Isquid:S19059"+Remove this unnecessary cast to "EditText".(Çíúƒ8ôî¦Ò›-
-Nsquid:S1905;"+Remove this unnecessary cast to "EditText".(ô³Íıÿÿÿÿ8ôî¦Ò›-
-Hsquid:S1905>"+Remove this unnecessary cast to "EditText".(ı¼Ğa8ôî¦Ò›-
-rsquid:S00116"SRename this field "et_phone" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãªÃî8µïËÑ›-
-zsquid:S00116"VRename this field "et_password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ğù‡ÿÿÿÿÿ8øùÇÑ›-
-wsquid:S00116"SRename this field "et_email" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó‡¸úÿÿÿÿ8øùÇÑ›-
-squid:UselessImportCheck"ORemove this unused import 'com.spencer.localaccount.db.logindb.LogjnDBManager'.(Í×Ï²ùÿÿÿÿ8Š‚ÉÑ›-
-tsquid:S1450"VRemove the "btn_add" field and declare it as a local variable in the relevant methods.(ÆåÚ”8ÙéíÑ›-
-Hsquid:S1068 "*Remove this unused "ibBack" private field.(ğÆç‘8øùÇÑ›-
-Nsquid:S1905:"+Remove this unnecessary cast to "EditText".(¡Ã¹ÿÿÿÿÿ8·Ê±Ò›-
-Lsquid:S1905?")Remove this unnecessary cast to "Button".(Ší‹»ûÿÿÿÿ8·Ê±Ò›-
-rsquid:S00116"SRename this field "tv_title" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†¾·8¡éŞÑ›-
