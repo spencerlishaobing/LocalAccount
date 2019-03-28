@@ -8,3 +8,5 @@
 <img src="https://github.com/weiyu199202/LocalAccount/blob/master/screenshort/2.jpg" width="200">
 <img src="https://github.com/weiyu199202/LocalAccount/blob/master/screenshort/3.jpg" width="200">
 <img src="https://github.com/weiyu199202/LocalAccount/blob/master/screenshort/4.jpg" width="200">
+###发布1.1版本
+> * 修复BUG
