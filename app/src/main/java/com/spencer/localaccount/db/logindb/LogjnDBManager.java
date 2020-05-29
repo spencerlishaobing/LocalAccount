@@ -13,7 +13,6 @@ public class LogjnDBManager {
     private SQLiteHelperOfLogjn helper;
     private SQLiteDatabase db;
 
-
     public LogjnDBManager(Context context) {
         helper = new SQLiteHelperOfLogjn(context);
         db = helper.getWritableDatabase();
