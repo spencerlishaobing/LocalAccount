@@ -22,15 +22,15 @@ public class AddAccountView extends Activity {
 
 
     private AccountDBManager accountDBManager;
-    private EditText et_des;
-    private EditText et_account;
-    private EditText et_password;
-    private EditText et_email;
-    private EditText et_phone;
-    private EditText et_remark;
-    private TextView tv_title;
+    private EditText etDes;
+    private EditText etAcount;
+    private EditText etPassword;
+    private EditText etEmail;
+    private EditText etPhone;
+    private EditText etRemark;
+    private TextView tvTitle;
 
-    private Button btn_add;
+    private Button btnAdd;
     private ImageButton ibBack;
     private boolean isUpdate = false;
     private AccountBean accountBean;
@@ -55,28 +55,27 @@ public class AddAccountView extends Activity {
     }
 
     private void initView() {
-        tv_title = findViewById(R.id.tv_title);
-        et_des = findViewById(R.id.et_des);
-        et_account = findViewById(R.id.et_account);
-        et_password = findViewById(R.id.et_password);
-        et_email = findViewById(R.id.et_email);
-        et_phone = findViewById(R.id.et_phone);
-        et_remark = findViewById(R.id.et_remark);
+        tvTitle = findViewById(R.id.tv_title);
+        etDes = findViewById(R.id.et_des);
+        etAcount = findViewById(R.id.et_account);
+        etPassword = findViewById(R.id.et_password);
+        etEmail = findViewById(R.id.et_email);
+        etPhone = findViewById(R.id.et_phone);
+        etRemark = findViewById(R.id.et_remark);
 
-        btn_add = findViewById(R.id.btn_add);
+        btnAdd = findViewById(R.id.btn_add);
 
         if (isUpdate) {
-            tv_title.setText("修改账户");
-            et_des.setText(accountBean.getDescription());
-            et_account.setText(accountBean.getAccount());
-            et_password.setText(accountBean.getPassword());
-            et_email.setText(accountBean.getEmail());
-            et_phone.setText(accountBean.getPhone());
-            et_remark.setText(accountBean.getRemark());
-
+            tvTitle.setText("修改账户");
+            etDes.setText(accountBean.getDescription());
+            etAcount.setText(accountBean.getAccount());
+            etPassword.setText(accountBean.getPassword());
+            etEmail.setText(accountBean.getEmail());
+            etPhone.setText(accountBean.getPhone());
+            etRemark.setText(accountBean.getRemark());
         }
-        btn_add.setText("提 交");
-        btn_add.setOnClickListener(new View.OnClickListener() {
+        btnAdd.setText("提 交");
+        btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dealData();
@@ -89,18 +88,18 @@ public class AddAccountView extends Activity {
 
 
         if (cbPsw.isChecked()) {
-            et_password.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+            etPassword.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
         } else {
-            et_password.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+            etPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
         }
 
         cbPsw.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton view, boolean isChecked) {
                 if (cbPsw.isChecked()) {
-                    et_password.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                    etPassword.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
                 } else {
-                    et_password.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                    etPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
                 }
             }
         });
@@ -116,12 +115,12 @@ public class AddAccountView extends Activity {
     private void dealData() {
 
 
-        String des = String.valueOf(et_des.getText());
-        String account = String.valueOf(et_account.getText());
-        String password = String.valueOf(et_password.getText());
-        String email = String.valueOf(et_email.getText());
-        String phone = String.valueOf(et_phone.getText());
-        String remark = String.valueOf(et_remark.getText());
+        String des = String.valueOf(etDes.getText());
+        String account = String.valueOf(etAcount.getText());
+        String password = String.valueOf(etPassword.getText());
+        String email = String.valueOf(etEmail.getText());
+        String phone = String.valueOf(etPhone.getText());
+        String remark = String.valueOf(etRemark.getText());
 
         if (TextUtils.isEmpty(des) || TextUtils.isEmpty(password)) {
             CommonUtils.showToast(this, "账户描述，密码为必填项");
@@ -133,7 +132,7 @@ public class AddAccountView extends Activity {
             return;
         }
 
-        if (!TextUtils.isEmpty(email)&&!CommonUtils.checkEmaile(email)) {
+        if (!TextUtils.isEmpty(email) && !CommonUtils.checkEmaile(email)) {
             CommonUtils.showToast(this, "邮箱格式不正确");
             return;
         }

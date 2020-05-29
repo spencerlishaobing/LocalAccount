@@ -3,7 +3,6 @@ package com.spencer.localaccount.utils;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-
 import static android.content.Context.MODE_PRIVATE;
 
 /**
@@ -30,6 +29,5 @@ public class GV {
     public static String getValue(Context context, String key) {
         SharedPreferences sharedPreferences = context.getSharedPreferences(DATA, MODE_PRIVATE);
         return sharedPreferences.getString(key, "");
-
     }
 }
